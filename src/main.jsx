@@ -1,6 +1,7 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import ProtectedRoute from './components/ProtectedRoute.jsx';
 
 import './index.css';
 import Login from './pages/Login.jsx';
@@ -13,7 +14,10 @@ const router = createBrowserRouter([
     element: <Login />,
   }, {
     path: 'dashboard',
-    element: <Dashboard />
+    element:
+      <ProtectedRoute>
+        <Dashboard />
+      </ProtectedRoute>
   }
 ]);
 

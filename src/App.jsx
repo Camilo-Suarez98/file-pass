@@ -6,7 +6,7 @@ import './App.css'
 import { Toaster } from 'react-hot-toast'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
@@ -32,7 +32,7 @@ function App() {
       </p>
       <Toaster position="top-right" />
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
