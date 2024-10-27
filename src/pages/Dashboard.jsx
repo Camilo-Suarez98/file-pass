@@ -12,7 +12,7 @@ function Dashboard() {
 
   const onDrop = useCallback((acceptedFiles) => {
     acceptedFiles.forEach(file => {
-      toast.success(`File uploaded: ${file.name}`);
+      toast.success(`Archivo cargado correctamente: ${file.name}`);
     });
   }, []);
 
