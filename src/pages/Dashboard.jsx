@@ -43,7 +43,7 @@ function Dashboard() {
                 className="flex items-center bg-white text-gray-600 hover:text-gray-900"
               >
                 <LogOut className="h-5 w-5 mr-2" />
-                Logout
+                Cerrar sesión
               </button>
             </div>
           </div>
