@@ -10,7 +10,7 @@ Una aplicación de React con inicio de sesión y función de carga de archivos m
   - Manejo de errores
 
 - **Página de inicio de sesión**
-  - Esatdos de carga
+  - Estados de carga
   - Información de errores
   - Responsive design
 
@@ -22,6 +22,7 @@ Una aplicación de React con inicio de sesión y función de carga de archivos m
 ## 🛠️ Tecnologías
 
 - React
+- Regres.in
 - Tailwind CSS
 - React Router DOM
 - React Dropzone
@@ -65,7 +66,7 @@ npm run dev
 
 ## 🔒 Autenticación
 
-La aplicación uses JWT tokens para autenticación:
-- Tokens son almacenados en localStorage
+La aplicación realiza el proceso de autenticación utilizando la API de Regres.in:
+- Los tokens son almacenados en localStorage
 - Las rutas protegidas redirigen al login si no hay token en localStorage
 - El manejo del token se realiza a través de AuthContext
