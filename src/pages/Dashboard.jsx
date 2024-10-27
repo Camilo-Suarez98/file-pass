@@ -60,11 +60,12 @@ function Dashboard() {
               <Upload className="mx-auto h-12 w-12 text-gray-400" />
               <p className="mt-2 text-sm text-gray-600">
                 {isDragActive
-                  ? 'Drop the files here...'
-                  : 'Drag and drop files here, or click to select files'}
+                  ? 'Suelte los archivos aquí...'
+                  : 'Arrastre y suelte los archivos aquí, o haga clic para seleccionarlos'
+                }
               </p>
               <p className="text-xs text-gray-500 mt-1">
-                Supported files: PDF, DOC, DOCX, PNG, JPG
+                Archivos soportados: PDF, DOC, DOCX, PNG, JPG
               </p>
             </div>
           </div>
