@@ -55,18 +55,18 @@ npm run dev
 ## 📝 Run the code
 
 1. **Login**
-   - Use the following credentials:
-     - Email: eve.holt@reqres.in
-     - Password: Any password
+  - Use the following credentials:
+    - Email: eve.holt@reqres.in
+    - Password: Any password
 
 2. **Dashboard**
-   - After logging in, you will be redirected to this page
-   - Try the drag&drop functionality
-   - Supports the following files: PDF, DOC, DOCX, PNG, JPG
+  - After logging in, you will be redirected to this page
+  - Try the drag&drop functionality
+  - Supports the following files: PDF, DOC, DOCX, PNG, JPG
 
 ## 🔒 Authentication
 
 The app performs the authentication process using the Regres.in API:
-- Tokens are stored in localStorage
-- Protected paths redirect to login if there is no token in localStorage
-- Token handling is done via AuthContext
+  - Tokens are stored in localStorage
+  - Protected paths redirect to login if there is no token in localStorage
+  - Token handling is done via AuthContext
