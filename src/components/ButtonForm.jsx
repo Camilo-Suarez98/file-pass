@@ -10,7 +10,7 @@ const ButtonForm = ({ checkingEmail }) => {
       {checkingEmail ? (
         <Loader2 className="animate-spin h-5 w-5" />
       ) : (
-        'Iniciar sesión'
+        'Login'
       )}
     </button>
   )

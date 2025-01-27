@@ -12,7 +12,7 @@ function Dashboard() {
 
   const onDrop = useCallback((acceptedFiles) => {
     acceptedFiles.forEach(file => {
-      toast.success(`Archivo cargado correctamente: ${file.name}`);
+      toast.success(`File uploaded successfully: ${file.name}`);
     });
   }, []);
 
@@ -43,7 +43,7 @@ function Dashboard() {
                 className="flex items-center bg-white text-gray-600 hover:text-gray-900"
               >
                 <LogOut className="h-5 w-5 mr-2" />
-                Cerrar sesión
+                Logout
               </button>
             </div>
           </div>
@@ -60,12 +60,12 @@ function Dashboard() {
               <Upload className="mx-auto h-12 w-12 text-gray-400" />
               <p className="mt-2 text-sm text-gray-600">
                 {isDragActive
-                  ? 'Suelte los archivos aquí...'
-                  : 'Arrastre y suelte los archivos aquí, o haga clic para seleccionarlos'
+                  ? 'Drop the files here...'
+                  : 'Drag and drop files here, or click to select them'
                 }
               </p>
               <p className="text-xs text-gray-500 mt-1">
-                Archivos soportados: PDF, DOC, DOCX, PNG, JPG
+                Supported files: PDF, DOC, DOCX, PNG, JPG
               </p>
             </div>
           </div>

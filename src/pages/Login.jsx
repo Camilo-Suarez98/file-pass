@@ -31,10 +31,10 @@ const Login = () => {
 
     try {
       await login(data.email, data.password);
-      toast.success('Inicio de sesión exitoso');
+      toast.success('Succesful login');
       navigate('/dashboard');
     } catch (error) {
-      toast.error('Usuario o contraseña incorrectos');
+      toast.error('Incorrect email or password');
       console.error(error);
     } finally {
       setCheckingEmail(false);
@@ -45,28 +45,28 @@ const Login = () => {
     <Layout>
       <div className="bg-white rounded-xl shadow-xl w-full max-w-md p-8">
         <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold text-gray-900">Bienvenido a FilePass</h1>
-          <p className="text-gray-600 mt-2">Por favor inicia sesión para continuar</p>
+          <h1 className="text-3xl font-bold text-gray-900">Welcome to FilePass</h1>
+          <p className="text-gray-600 mt-2">Please login to continue</p>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-6">
           <InputForm
-            labelName="Correo Electrónico"
+            labelName="Email"
             icon={Mail}
             type="email"
             name="email"
-            placeholder="Ingresa tu correo"
+            placeholder="Enter your email address"
             value={data.email}
             onChange={handleChange}
             autoComplete='username'
           />
 
           <InputForm
-            labelName="Contraseña"
+            labelName="Password"
             icon={Lock}
             type="password"
             name="password"
-            placeholder="Ingresa tu contraseña"
+            placeholder="Enter your password"
             value={data.password}
             onChange={handleChange}
             autoComplete='current-password'
@@ -76,7 +76,7 @@ const Login = () => {
         </form>
 
         <p className="mt-4 text-center text-sm text-gray-600">
-          Credenciales: <strong>eve.holt@reqres.in</strong> / Cualquier contraseña
+          Credencials: <strong>eve.holt@reqres.in</strong> / Any password
         </p>
       </div>
     </Layout>
