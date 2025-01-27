@@ -1,25 +1,25 @@
 # FilePass
 
-Una aplicación de React con inicio de sesión y función de carga de archivos mediante el sistema drag&drop de archivos.
+A React App with Login and drag&drop file upload funtion.
 
 ## 🚀 Características
 
-- **Sistema de Autenticación**
-  - Autenticación
-  - Rutas protegidas
-  - Manejo de errores
+- **Authentication System**
+  - Authentication
+  - Protected Routes
+  - Erro handling
 
-- **Página de inicio de sesión**
-  - Estados de carga
-  - Información de errores
+- **Login Page**
+  - Load state
+  - Error information
   - Responsive design
 
 - **Dashboard**
-  - Carga de archvios mediante Drag&drop
-  - Notificaciones de carga con exito
-  - Funcionalidad de cierre de seión
+  - Uploading files via Drag&drop
+  - Successful upload notification
+  - Logout funtion
 
-## 🛠️ Tecnologías
+## 🛠️ Tech Stack
 
 - React
 - Regres.in
@@ -31,42 +31,42 @@ Una aplicación de React con inicio de sesión y función de carga de archivos m
 - React Hot Toast
 - Lucide React Icons
 
-## 🏃‍♂️ Como comenzar
+## 🏃‍♂️ Start Running
 
-1. **Clonar el repositorio**
+1. **Clone the repository**
 
 ```bash
 git clone https://github.com/Camilo-Suarez98/file-pass.git
 cd file-pass
 ```
 
-2. **Instalar las dependencias**
+2. **Install the dependencies**
 
 ```bash
 npm install
 ```
 
-3. **Ejecutar el servidor de desarrollo**
+3. **Run the server**
 
 ```bash
 npm run dev
 ```
 
-## 📝 Uso
+## 📝 Run the code
 
-1. **Inicio de sesión**
-   - Usa las siguientes credenciales:
-     - Correo: eve.holt@reqres.in
-     - Contraseña: Cualquier contraseña
+1. **Login**
+   - Use the following credentials:
+     - Email: eve.holt@reqres.in
+     - Password: Any password
 
 2. **Dashboard**
-   - Luego de iniciar sesión, serás redirigido a esta página
-   - Prueba la funcionalidad de drag&drop
-   - Soporta los siguientes archivos: PDF, DOC, DOCX, PNG, JPG
+   - After logging in, you will be redirected to this page
+   - Try the drag&drop functionality
+   - Supports the following files: PDF, DOC, DOCX, PNG, JPG
 
-## 🔒 Autenticación
+## 🔒 Authentication
 
-La aplicación realiza el proceso de autenticación utilizando la API de Regres.in:
-- Los tokens son almacenados en localStorage
-- Las rutas protegidas redirigen al login si no hay token en localStorage
-- El manejo del token se realiza a través de AuthContext
+The app performs the authentication process using the Regres.in API:
+- Tokens are stored in localStorage
+- Protected paths redirect to login if there is no token in localStorage
+- Token handling is done via AuthContext
