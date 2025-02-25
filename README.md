@@ -22,7 +22,7 @@ A React App with Login and drag&drop file upload funtion.
 ## 🛠️ Tech Stack
 
 - React
-- Regres.in
+- Reques.in
 - Tailwind CSS
 - React Router DOM
 - React Dropzone
